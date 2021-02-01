@@ -1,0 +1,42 @@
+:root {
+    --nav-title-font-size: 3.5em;
+    --nav-title-font-weight: bold;
+    --nav-link-font-weight: 300;
+}
+
+.header-title {
+    color: var(--color-text-light);
+    font-size: var(--nav-title-font-size);
+    font-weight: var(--nav-title-font-weight);
+    text-decoration: none;
+}
+
+.header-nav {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+}
+
+.header-nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.header-link {
+    list-style: none;
+}
+
+.header-link a {
+    color: var(--color-text-light);
+    font-weight: var(--nav-link-font-weight);
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.header-link a:hover, .header-title:hover {
+    color: white;
+}

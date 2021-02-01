@@ -1,0 +1,32 @@
+@import './variables.css';
+@import './header.css';
+@import './buttons.css';
+
+:root {
+    color: var(--color-text-light);
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-size: 1.25em;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, var(--color-background-dark), var(--color-background-light));
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    margin-bottom: 3rem;
+}
+
+.inner-container {
+    margin: 0 2rem;
+}
+
+.page-header {
+    font-size: 2em;
+    font-weight: 500;
+}
