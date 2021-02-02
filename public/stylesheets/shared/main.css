@@ -1,6 +1,8 @@
 @import './variables.css';
 @import './header.css';
 @import './buttons.css';
+@import './form.css';
+@import './results.css';
 
 :root {
     color: var(--color-text-light);
