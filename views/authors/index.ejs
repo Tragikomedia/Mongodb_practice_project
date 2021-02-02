@@ -15,8 +15,8 @@
 <br>
 
 <% authors.forEach(author => { %>
-    <div class="search-result-row">
-        <div><%= author.name %></div>
+    <div class="author-row">
+        <div class="author-name"><%= author.name %></div>
         <div class="button-row">
             <a class="btn-primary" href="/authors/<%= author.id %>">View</a>
             <a class="btn-primary" href="/authors/<%= author.id %>/edit">Edit</a>

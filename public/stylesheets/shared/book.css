@@ -1,0 +1,64 @@
+:root {
+    --book-cover-width: 200px;
+    --book-cover-width-large: 325px;
+    --book-cover-aspect-ratio: 0.75;
+}
+
+.book-cover {
+    height: calc(var(--book-cover-width) / var(--book-cover-aspect-ratio));
+    width: var(--book-cover-width);
+}
+
+.book-cover-large {
+    --book-cover-width: var(--book-cover-width-large);
+}
+
+.book-grid {
+    display: grid;
+    justify-content: center;
+    grid-gap: 2rem;
+    /* Reapeat auto-fill, width includes as many items as possible*/
+    grid-template-columns: repeat(auto-fill, var(--book-cover-width));
+}
+
+.book-grid-large {
+    grid-template-columns: repeat(auto-fill, var(--book-cover-width-large));
+}
+
+.book-details {
+    display: flex;
+}
+
+.book-details-label {
+    align-self: flex-start;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.book-details-grid {
+    /* Grid is used so that the items to the right are neatly aligned*/
+    align-content: flex-start;
+    align-items: center;
+    display: grid;
+    gap: 0.25rem 1rem;
+    grid-template-columns: auto auto;
+}
+
+.book-details-button-grid {
+    align-content: flex-start;
+    align-items: flex-start;
+    display: grid;
+    gap: 0.5rem;
+    grid-template-areas: 
+        "edit delete"
+        "author author";
+    justify-items: flex-start;
+    margin-top: 0.5rem;
+}
+
+.book-details-author-button {
+    /* Grid area names an area to be used in grid-template area*/
+    grid-area: author;
+    /* j-s stretch makes it fill the whole available space*/
+    justify-self: stretch;
+}

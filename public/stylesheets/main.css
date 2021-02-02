@@ -1,8 +1,9 @@
-@import './variables.css';
-@import './header.css';
-@import './buttons.css';
-@import './form.css';
-@import './results.css';
+@import './shared/variables.css';
+@import './shared/header.css';
+@import './shared/buttons.css';
+@import './shared/form.css';
+@import './shared/author.css';
+@import './shared/book.css';
 
 :root {
     color: var(--color-text-light);
@@ -31,4 +32,8 @@ body {
 .page-header {
     font-size: 2em;
     font-weight: 500;
+}
+
+.error-message {
+    color: hsl(var(--color-danger-hue), 100%, 50%);
 }

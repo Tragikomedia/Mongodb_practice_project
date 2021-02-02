@@ -12,14 +12,14 @@
     <script defer src="/javascripts/fileUpload.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/stylesheets/shared/main.css">
+    <link id="main-css" rel="stylesheet" href="/stylesheets/main.css">
     <title>How are you?</title>
 </head>
 <body>
     <div class="container">
         <%- include('../partials/header.ejs') %>
-        <%- include('../partials/errorMessage.ejs') %>
             <div class="inner-container">
+                <%- include('../partials/errorMessage.ejs') %>
                 <%- body %>
             </div>
     </div>
